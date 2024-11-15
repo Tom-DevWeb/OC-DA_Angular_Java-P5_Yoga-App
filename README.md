@@ -3,9 +3,8 @@
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
 <br/>
-![Static Badge](https://img.shields.io/badge/18.0.3-Angular_version-red)
+![Static Badge](https://img.shields.io/badge/14.2-Angular_version-red)
 ![Static Badge](https://img.shields.io/badge/11-JAVA_version-orange)
 ![Static Badge](https://img.shields.io/badge/3.3.4-Spring_Boot_version-gree)
 
