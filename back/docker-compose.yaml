@@ -1,0 +1,20 @@
+services:
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db-P5
+    environment:
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./../ressources/sql/script.sql:/docker-entrypoint-initdb.d/script.sql
+    networks:
+      - springboot-mysql-network
+
+volumes:
+  mysql_data:
+
+networks:
+  springboot-mysql-network:
