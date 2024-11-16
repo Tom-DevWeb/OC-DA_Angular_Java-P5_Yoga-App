@@ -20,7 +20,7 @@ describe('RegisterComponent', () => {
       imports: [
         BrowserAnimationsModule,
         HttpClientModule,
-        ReactiveFormsModule,  
+        ReactiveFormsModule,
         MatCardModule,
         MatFormFieldModule,
         MatIconModule,
@@ -37,4 +37,43 @@ describe('RegisterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO: L'affichage d'erreur en l'absence d'un champ obligatoire
+  it('should display an error message when a required field is missing', () => {
+
+  });
 });
+
+describe('RegisterComponent (Intégration)', () => {
+  let component: RegisterComponent;
+  let fixture: ComponentFixture<RegisterComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [RegisterComponent],
+      imports: [
+        BrowserAnimationsModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatIconModule,
+        MatInputModule
+      ]
+    })
+      .compileComponents();
+
+    fixture = TestBed.createComponent(RegisterComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  //TODO: La création de compte
+  it('should create an account', () => {
+
+  });
+})

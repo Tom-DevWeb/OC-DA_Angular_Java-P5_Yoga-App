@@ -33,4 +33,9 @@ describe('ListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO: L'apparition des boutons Create et Detail si l'utilisateur connecté est un admin
+  it('should display the Create and Detail buttons if the logged-in is an admin', () => {
+
+  });
 });

@@ -43,4 +43,9 @@ describe('MeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO: Affichage des informations de l'utilisateur
+  it("should display the user's information", () => {
+
+  });
 });

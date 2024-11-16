@@ -56,4 +56,9 @@ describe('FormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO: L'affichage d'erreur en l'absence d'un champ obligatoire
+  it('should display an error message when a required field is missing', () => {
+
+  });
 });

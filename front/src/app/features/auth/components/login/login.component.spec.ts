@@ -39,4 +39,14 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO: La gestion des erreurs en cas de mauvais login/password
+  it('should handle errors when login/password are incorrect', () => {
+
+  });
+
+  //TODO: L'affichage d'erreur en l'absence d'un champ obligatoire
+  it('should display an error message when a required field is missing', () => {
+
+  });
 });
