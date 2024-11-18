@@ -10,6 +10,7 @@ import {LoginComponent} from './login.component';
 import {LoginRequest} from "../../interfaces/loginRequest.interface";
 import {AuthService} from "../../services/auth.service";
 import {throwError} from "rxjs";
+import {By} from "@angular/platform-browser";
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -58,13 +59,16 @@ describe('LoginComponent', () => {
 
   //L'affichage d'erreur en l'absence d'un champ obligatoire
   it('should display an error message when a required field is missing', () => {
-    component.onError = true
+    component.form.setValue({
+      email: '',
+      password: ''
+    })
+
     fixture.detectChanges()
 
-    const errorMessage = fixture.nativeElement.querySelector('.error')
+    const submitButton =
+      fixture.debugElement.query(By.css('button[type="submit"]')).nativeElement
 
-    expect(errorMessage).toBeTruthy()
-    expect(errorMessage.textContent).toContain('An error occurred')
-
+    expect(submitButton.disabled).toBeTruthy()
   });
 });
