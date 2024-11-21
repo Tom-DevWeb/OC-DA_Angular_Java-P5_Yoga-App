@@ -12,8 +12,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { expect } from '@jest/globals';
 import { SessionService } from 'src/app/services/session.service';
 import { SessionApiService } from '../../services/session-api.service';
-
 import { FormComponent } from './form.component';
+import {By} from "@angular/platform-browser";
 
 describe('FormComponent', () => {
   let component: FormComponent;
@@ -27,7 +27,6 @@ describe('FormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-
       imports: [
         RouterTestingModule,
         HttpClientModule,
@@ -57,8 +56,21 @@ describe('FormComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  //TODO: L'affichage d'erreur en l'absence d'un champ obligatoire
+  //L'affichage d'erreur en l'absence d'un champ obligatoire
   it('should display an error message when a required field is missing', () => {
+    component.sessionForm?.setValue({
+      name: "",
+      date: "",
+      teacher_id: "",
+      description: ""
+    })
+
+    fixture.detectChanges()
+
+    const submitButton =
+      fixture.debugElement.query(By.css('button[type="submit"]')).nativeElement
+
+    expect(submitButton.disabled).toBeTruthy()
 
   });
 });
