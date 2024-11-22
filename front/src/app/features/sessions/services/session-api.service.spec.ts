@@ -19,7 +19,7 @@ describe('SessionsService', () => {
         HttpClientTestingModule
       ],
       providers: [SessionApiService]
-    });
+    })
     sessionApiService = TestBed.inject(SessionApiService);
     httpTestingController = TestBed.inject(HttpTestingController)
   });
