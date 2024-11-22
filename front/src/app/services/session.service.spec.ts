@@ -15,17 +15,21 @@ import {LoginRequest} from "../features/auth/interfaces/loginRequest.interface";
 import {expect} from '@jest/globals';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
+import {AppComponent} from "../app.component";
+import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 
 describe('SessionService (Intégration)', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
+  let appComponent: AppComponent
+  let appFixture: ComponentFixture<AppComponent>
   let sessionService: SessionService;
   let router: Router;
   let httpTestingController: HttpTestingController
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LoginComponent],
+      declarations: [LoginComponent, AppComponent],
       imports: [
         BrowserAnimationsModule,
         HttpClientModule,
@@ -35,6 +39,7 @@ describe('SessionService (Intégration)', () => {
         MatFormFieldModule,
         MatInputModule,
         MatIconModule,
+        MatToolbarModule,
         RouterTestingModule.withRoutes([
           { path: 'sessions', redirectTo: ''}
         ])
@@ -44,6 +49,8 @@ describe('SessionService (Intégration)', () => {
 
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
+    appFixture = TestBed.createComponent(AppComponent)
+    appComponent = appFixture.componentInstance
     sessionService = TestBed.inject(SessionService);
     router = TestBed.inject(Router);
     httpTestingController = TestBed.inject(HttpTestingController)
@@ -112,7 +119,19 @@ describe('SessionService (Intégration)', () => {
 
   //TODO: La déconnexion de l'utilisateur
   it('should log out the user', () => {
+    const navigateSpy = jest.spyOn(router, 'navigate');
+    const sessionLogOutSpy = jest.spyOn(sessionService, 'logOut');
 
+    appComponent.logout();
+
+    // Vérifier que le service de session est appelé pour déconnexion
+    expect(sessionLogOutSpy).toHaveBeenCalled();
+
+    // Vérifier que les données de session sont effacées
+    expect(sessionService.sessionInformation).toBeUndefined();
+    expect(sessionService.isLogged).toBe(false);
+
+    // Vérifier que l'utilisateur est redirigé vers la page de login
+    expect(navigateSpy).toHaveBeenCalledWith(['']);
   });
-
 });
