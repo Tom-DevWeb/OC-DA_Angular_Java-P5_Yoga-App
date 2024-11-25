@@ -3,20 +3,21 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {expect} from '@jest/globals';
 import {UserService} from './user.service';
 import {MeComponent} from "../components/me/me.component";
-import {Router} from "@angular/router";
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 import {RouterTestingModule} from "@angular/router/testing";
 import {SessionService} from "./session.service";
 import {By} from "@angular/platform-browser";
-import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatCardModule} from "@angular/material/card";
+import {MatIconModule} from "@angular/material/icon";
 
 describe('UserService', () => {
   let service: UserService;
   let sessionService: SessionService
   let component: MeComponent
   let fixture: ComponentFixture<MeComponent>
-  let router: Router;
   let httpTestingController: HttpTestingController
+  let matSnackBar: MatSnackBar;
 
   beforeEach( async () => {
     await TestBed.configureTestingModule({
@@ -25,6 +26,8 @@ describe('UserService', () => {
         HttpClientModule,
         HttpClientTestingModule,
         MatSnackBarModule,
+        MatCardModule,
+        MatIconModule,
         RouterTestingModule.withRoutes([
           { path: '', redirectTo: '', pathMatch: 'full'}
         ])
@@ -35,8 +38,8 @@ describe('UserService', () => {
     sessionService = TestBed.inject(SessionService)
     fixture = TestBed.createComponent(MeComponent)
     component = fixture.componentInstance
-    router = TestBed.inject(Router);
     httpTestingController = TestBed.inject(HttpTestingController)
+    matSnackBar = TestBed.inject(MatSnackBar)
 
     sessionService.sessionInformation = {
       id: 1,
@@ -68,33 +71,34 @@ describe('UserService', () => {
     expect(service).toBeTruthy();
   });
 
-  //TODO: La suppression de son compte par l'utilisateur
+  //La suppression de son compte par l'utilisateur
   it('should delete the user account and log out', () => {
-    const navigateSpy = jest.spyOn(router, 'navigate');
-    const logOutSpy = jest.spyOn(sessionService, 'logOut');
+    const snackBarSpy = jest.spyOn(matSnackBar, 'open')
 
-    // Détecte les changements pour initialiser le DOM du composant
     fixture.detectChanges();
 
-    // Trouve le bouton de suppression et simule un clic
-    const deleteButton = fixture.debugElement.query(By.css('button[mat-raised-button][color="warn"]'));
-    expect(deleteButton).toBeTruthy(); // Vérifie que le bouton est bien rendu
+    const deleteButton = fixture.debugElement.query(By.css('#deleteButton'));
+    expect(deleteButton).toBeTruthy();
 
-    deleteButton.nativeElement.click(); // Simule le clic utilisateur
+    deleteButton.nativeElement.click();
 
-    // Capture toutes les requêtes HTTP envoyées
-    const requests = httpTestingController.match((req) => req.url === 'api/user/1');
-    expect(requests.length).toBe(1); // Vérifie qu'une seule requête DELETE a été envoyée
+    const reqDelete = httpTestingController.expectOne({
+      method: 'DELETE',
+      url: 'api/user/1',
+    })
 
-    // Vérifiez que c'est bien un DELETE
-    const deleteRequest = requests[0];
-    expect(deleteRequest.request.method).toBe('DELETE');
+    expect(reqDelete.request.method).toBe('DELETE')
 
-    // Simulez une réponse de succès pour cette requête
-    deleteRequest.flush({});
+    reqDelete.flush({}, { status: 200, statusText: 'OK' })
 
-    // Vérifie que les effets secondaires se sont produits
-    expect(logOutSpy).toHaveBeenCalled(); // Vérifie que la déconnexion a été effectuée
-    expect(navigateSpy).toHaveBeenCalledWith(['/']);
+    const reqGet = httpTestingController.expectOne({ method: 'GET', url: 'api/user/1'})
+    expect(reqGet.request.method).toBe('GET');
+    reqGet.flush({});
+
+    expect(snackBarSpy).toHaveBeenCalledWith(
+      'Your account has been deleted !',
+      'Close',
+      { duration: 3000 }
+    );
   });
 });

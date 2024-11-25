@@ -16,7 +16,7 @@ import {expect} from '@jest/globals';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 import {AppComponent} from "../app.component";
-import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 describe('SessionService (Intégration)', () => {
   let component: LoginComponent;
@@ -117,7 +117,7 @@ describe('SessionService (Intégration)', () => {
     expect(navigateSpy).not.toHaveBeenCalled();
   });
 
-  //TODO: La déconnexion de l'utilisateur
+  //La déconnexion de l'utilisateur
   it('should log out the user', () => {
     const navigateSpy = jest.spyOn(router, 'navigate');
     const sessionLogOutSpy = jest.spyOn(sessionService, 'logOut');
