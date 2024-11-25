@@ -1,0 +1,111 @@
+# yoga
+
+###
+# group: auth
+# @name login
+POST localhost:8080/api/auth/login
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+Content-Type: application/json
+
+{
+  "email": "yoga@studio.com",
+  "password": "test!1234"
+}
+
+###
+# group: auth
+# @name register
+POST localhost:8080/api/auth/register
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+Content-Type: application/json
+
+{
+  "lastName": "toto",
+  "firstName": "toto",
+  "email": "toto3@toto.com",
+  "password": "test!1234"
+}
+
+###
+# group: teacher
+# @name find all
+GET localhost:8080/api/teacher
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: teacher
+# @name find by id
+GET localhost:8080/api/teacher/{{id}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: session
+# @name find all
+GET localhost:8080/api/session
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: session
+# @name find by id
+GET localhost:8080/api/session/{{id_1}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: session
+# @name create
+POST localhost:8080/api/session
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+Content-Type: application/json
+
+{
+  "name": "session 1",
+  "date": "2012-01-01",
+  "teacher_id": 5,
+  "users": null,
+  "description": "my description"
+}
+
+###
+# group: session
+# @name update
+PUT localhost:8080/api/session/{{id_2}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+Content-Type: application/json
+
+{
+  "name": "session 1",
+  "date": "2012-01-01T00:00:00.000+00:00",
+  "teacher_id": 1,
+  "description": "my description",
+  "users": []
+}
+
+###
+# group: session
+# @name delete
+DELETE localhost:8080/api/session/{{id_3}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: session
+# @name participe
+POST localhost:8080/api/session/{{id_4}}/participate/{{userId}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: session
+# @name no longer participe
+DELETE localhost:8080/api/session/{{id_5}}/participate/{{userId_1}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: user
+# @name find by id
+GET localhost:8080/api/user/{{id_6}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
+
+###
+# group: user
+# @name delete
+DELETE localhost:8080/api/user/{{id_7}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5b2dhQHN0dWRpby5jb20iLCJpYXQiOjE2NjE3ODg0OTEsImV4cCI6MTY2MTg3NDg5MX0.ZIxe_D9aSVixqeeosAsI8_724qETl-eqGU_CwSEsumdd2VC0nWh6xZR2c3cWprOwaAeCMtNHp4OQUOcXkkxfEg
