@@ -1,6 +1,5 @@
 describe('List session spec', () => {
   beforeEach(() => {
-    cy.login();
 
     cy.intercept(
       {
@@ -41,6 +40,7 @@ describe('List session spec', () => {
       ]
     ).as('getSessions');
 
+    cy.login();
   })
 
   it('List session successfull', () => {
