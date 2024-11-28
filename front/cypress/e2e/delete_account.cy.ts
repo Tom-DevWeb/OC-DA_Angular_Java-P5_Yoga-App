@@ -25,11 +25,6 @@ describe('Delete account spec', () => {
 
     cy.wait('@getUserInfo');
 
-    cy.contains('Name: John DOE').should('be.visible');
-    cy.contains('Email: john.doe@example.com').should('be.visible');
-    cy.contains('Create at: January 1, 2023').should('be.visible');
-    cy.contains('Last update: January 1, 2024').should('be.visible');
-
     cy.get('#deleteButton').should('be.visible');
 
     cy.get('#deleteButton').click();

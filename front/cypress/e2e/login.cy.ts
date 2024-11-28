@@ -1,26 +1,34 @@
 describe('Login spec', () => {
-  it('Login successfull', () => {
-    cy.visit('/login')
+    beforeEach(() => {
+      cy.intercept('POST', '/api/auth/login', {
+        body: {
+          id: 1,
+          username: 'userName',
+          firstName: 'firstName',
+          lastName: 'lastName',
+          admin: true
+        },
+      }).as('postLogin')
 
-    cy.intercept('POST', '/api/auth/login', {
-      body: {
-        id: 1,
-        username: 'userName',
-        firstName: 'firstName',
-        lastName: 'lastName',
-        admin: true
-      },
+      cy.intercept(
+        {
+          method: 'GET',
+          url: '/api/session',
+        },
+        []).as('getSessions')
+
+      cy.visit('/')
     })
 
-    cy.intercept(
-      {
-        method: 'GET',
-        url: '/api/session',
-      },
-      []).as('session')
+  it('Login successfull', () => {
+    cy.contains('Login').click()
 
     cy.get('input[formControlName=email]').type("yoga@studio.com")
     cy.get('input[formControlName=password]').type(`${"test!1234"}{enter}{enter}`)
+
+    cy.wait('@postLogin')
+
+    cy.wait('@getSessions')
 
     cy.url().should('include', '/sessions')
   })

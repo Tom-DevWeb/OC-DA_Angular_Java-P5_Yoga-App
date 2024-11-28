@@ -63,5 +63,10 @@ describe('Detail session spec', () => {
     cy.wait('@getSession')
 
     cy.contains('Cours Gratuit').should('be.visible');
+    cy.contains('Margot DELAHAYE').should('be.visible');
+    cy.contains('March 22, 2024').should('be.visible');
+    cy.contains('Test desc').should('be.visible');
+    cy.contains('Create at: November 27, 2024').should('be.visible');
+    cy.contains('Last update: November 27, 2024').should('be.visible');
   });
 })
