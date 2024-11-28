@@ -44,6 +44,7 @@
 declare namespace Cypress {
   interface Chainable<Subject = any> {
     login(): Chainable<void>
+    getSessions(): Chainable<void>
   }
 }
 
@@ -60,14 +61,7 @@ Cypress.Commands.add('login', () => {
     },
   });
 
-  cy.intercept(
-    {
-      method: 'GET',
-      url: '/api/session',
-    },
-    []
-  );
-
   cy.get('input[formControlName=email]').type('yoga@studio.com');
   cy.get('input[formControlName=password]').type(`${'test!1234'}{enter}{enter}`);
 });
+
