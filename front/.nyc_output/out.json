@@ -388,7 +388,7 @@
       "0": 1,
       "1": 1,
       "2": 1,
-      "3": 48,
+      "3": 47,
       "4": 1,
       "5": 1,
       "6": 1,
@@ -404,7 +404,7 @@
     "f": {
       "0": 1,
       "1": 1,
-      "2": 48,
+      "2": 47,
       "3": 1,
       "4": 0,
       "5": 1,
@@ -703,26 +703,26 @@
     },
     "s": {
       "0": 1,
-      "1": 0,
-      "2": 0,
-      "3": 0,
+      "1": 1,
+      "2": 1,
+      "3": 1,
       "4": 0,
       "5": 1,
-      "6": 0,
+      "6": 1,
       "7": 1,
       "8": 1
     },
     "f": {
       "0": 1,
-      "1": 0,
-      "2": 0,
+      "1": 1,
+      "2": 1,
       "3": 0,
-      "4": 0
+      "4": 1
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        1
       ]
     },
     "inputSourceMap": {
@@ -2233,105 +2233,105 @@
       "1": 0,
       "2": 0,
       "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
+      "4": 3,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
       "11": 0,
       "12": 0,
       "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 3,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "28": 1,
+      "29": 1,
+      "30": 1,
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "34": 1,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 3,
+      "43": 2,
+      "44": 2,
+      "45": 2,
+      "46": 2,
+      "47": 2,
+      "48": 2,
+      "49": 2,
+      "50": 2,
+      "51": 2,
+      "52": 2,
+      "53": 2,
+      "54": 2,
+      "55": 2,
       "56": 1,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
+      "57": 1,
+      "58": 1,
+      "59": 1,
+      "60": 1,
+      "61": 1,
+      "62": 1,
       "63": 0,
       "64": 0,
       "65": 0,
       "66": 0,
       "67": 0,
       "68": 1,
-      "69": 0,
+      "69": 1,
       "70": 1,
-      "71": 0,
-      "72": 0,
-      "73": 0,
+      "71": 4,
+      "72": 1,
+      "73": 1,
       "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 0,
-      "86": 0,
+      "75": 1,
+      "76": 1,
+      "77": 1,
+      "78": 1,
+      "79": 1,
+      "80": 1,
+      "81": 1,
+      "82": 1,
+      "83": 1,
+      "84": 4,
+      "85": 3,
+      "86": 3,
       "87": 1
     },
     "f": {
       "0": 0,
-      "1": 0,
+      "1": 3,
       "2": 0,
-      "3": 0,
+      "3": 3,
       "4": 1,
-      "5": 0,
-      "6": 0,
-      "7": 0,
+      "5": 1,
+      "6": 1,
+      "7": 1,
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 0,
-      "12": 0,
+      "11": 1,
+      "12": 4,
       "13": 0
     },
     "b": {
@@ -2340,28 +2340,28 @@
         0
       ],
       "1": [
-        0,
-        0
+        1,
+        2
       ],
       "2": [
-        0,
-        0
+        1,
+        2
       ],
       "3": [
-        0,
-        0
+        2,
+        1
       ],
       "4": [
-        0,
-        0
+        1,
+        1
       ],
       "5": [
-        0,
-        0
+        1,
+        3
       ],
       "6": [
-        0,
-        0
+        3,
+        1
       ]
     },
     "inputSourceMap": {
@@ -2404,12 +2404,12 @@
         "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/components/me/me.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"m3\">\r\n  <mat-card>\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n        <button mat-icon-button (click)=\"back()\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n        <h1>User information</h1>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-content>\r\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\">\r\n        <p>Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\r\n        <p>Email: {{ user.email }}</p>\r\n        <p *ngIf=\"user.admin\" class=\"my2\">You are admin</p>\r\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\">\r\n          <p>Delete my account:</p>\r\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n        </div>\r\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\r\n\r\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\r\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
+        "<div class=\"m3\">\r\n  <mat-card>\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n        <button mat-icon-button (click)=\"back()\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n        <h1>User information</h1>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-content>\r\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\">\r\n        <p>Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\r\n        <p>Email: {{ user.email }}</p>\r\n        <p *ngIf=\"user.admin\" class=\"my2\">You are admin</p>\r\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\">\r\n          <p>Delete my account:</p>\r\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\" id=\"deleteButton\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n        </div>\r\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\r\n\r\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\r\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component, OnInit } from '@angular/core';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { Router } from '@angular/router';\r\nimport { User } from '../../interfaces/user.interface';\r\nimport { SessionService } from '../../services/session.service';\r\nimport { UserService } from '../../services/user.service';\r\n\r\n@Component({\r\n  selector: 'app-me',\r\n  templateUrl: './me.component.html',\r\n  styleUrls: ['./me.component.scss']\r\n})\r\nexport class MeComponent implements OnInit {\r\n\r\n  public user: User | undefined;\r\n\r\n  constructor(private router: Router,\r\n              private sessionService: SessionService,\r\n              private matSnackBar: MatSnackBar,\r\n              private userService: UserService) {\r\n  }\r\n\r\n  public ngOnInit(): void {\r\n    this.userService\r\n      .getById(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((user: User) => this.user = user);\r\n  }\r\n\r\n  public back(): void {\r\n    window.history.back();\r\n  }\r\n\r\n  public delete(): void {\r\n    this.userService\r\n      .delete(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((_) => {\r\n        this.matSnackBar.open(\"Your account has been deleted !\", 'Close', { duration: 3000 });\r\n        this.sessionService.logOut();\r\n        this.router.navigate(['/']);\r\n      })\r\n  }\r\n\r\n}\r\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "9c88f03c6c4b72e69e07ba994f3032f08d1e70d7"
+    "hash": "efd94752e263285bf06130e878fb49558eaa2b07"
   },
   "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts": {
     "path": "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts",
@@ -2994,10 +2994,10 @@
       "0": 1,
       "1": 1,
       "2": 1,
-      "3": 1,
+      "3": 2,
       "4": 0,
       "5": 0,
-      "6": 1,
+      "6": 2,
       "7": 1,
       "8": 1,
       "9": 1,
@@ -3006,13 +3006,13 @@
     "f": {
       "0": 1,
       "1": 1,
-      "2": 1,
+      "2": 2,
       "3": 1
     },
     "b": {
       "0": [
         0,
-        1
+        2
       ],
       "1": [
         1,
@@ -4937,7 +4937,7 @@
       }
     },
     "s": {
-      "0": 5,
+      "0": 8,
       "1": 1,
       "2": 1,
       "3": 1,
@@ -4952,7 +4952,7 @@
       "12": 0,
       "13": 1,
       "14": 1,
-      "15": 45,
+      "15": 41,
       "16": 1,
       "17": 1,
       "18": 1,
@@ -4963,13 +4963,13 @@
       "23": 1,
       "24": 1,
       "25": 1,
-      "26": 48,
+      "26": 47,
       "27": 0,
       "28": 0,
       "29": 1,
       "30": 1,
       "31": 1,
-      "32": 49,
+      "32": 48,
       "33": 1,
       "34": 1,
       "35": 1,
@@ -4980,31 +4980,31 @@
       "40": 1,
       "41": 1,
       "42": 1,
-      "43": 49,
-      "44": 48,
-      "45": 48,
-      "46": 48,
+      "43": 48,
+      "44": 47,
+      "45": 47,
+      "46": 47,
       "47": 1
     },
     "f": {
-      "0": 5,
+      "0": 8,
       "1": 0,
-      "2": 45,
+      "2": 41,
       "3": 1,
       "4": 1,
-      "5": 48,
+      "5": 47,
       "6": 0,
       "7": 1,
-      "8": 49
+      "8": 48
     },
     "b": {
       "0": [
         1,
-        4
+        7
       ],
       "1": [
         1,
-        44
+        40
       ],
       "2": [
         1,
@@ -5012,10 +5012,10 @@
       ],
       "3": [
         1,
-        48
+        47
       ],
       "4": [
-        48,
+        47,
         1
       ]
     },
@@ -5322,9 +5322,9 @@
     "s": {
       "0": 1,
       "1": 1,
-      "2": 2,
-      "3": 1,
-      "4": 2,
+      "2": 3,
+      "3": 2,
+      "4": 3,
       "5": 1,
       "6": 1,
       "7": 1,
@@ -5333,12 +5333,12 @@
     "f": {
       "0": 1,
       "1": 1,
-      "2": 2,
+      "2": 3,
       "3": 1
     },
     "b": {
       "0": [
-        1,
+        2,
         1
       ],
       "1": [
@@ -6841,7 +6841,7 @@
       "17": 1,
       "18": 1,
       "19": 1,
-      "20": 43,
+      "20": 39,
       "21": 1,
       "22": 1,
       "23": 1,
@@ -6864,19 +6864,19 @@
       "40": 1,
       "41": 1,
       "42": 1,
-      "43": 43,
-      "44": 42,
-      "45": 42,
-      "46": 42,
-      "47": 42,
-      "48": 42,
-      "49": 42,
-      "50": 42,
-      "51": 42,
-      "52": 42,
-      "53": 42,
-      "54": 42,
-      "55": 42,
+      "43": 39,
+      "44": 38,
+      "45": 38,
+      "46": 38,
+      "47": 38,
+      "48": 38,
+      "49": 38,
+      "50": 38,
+      "51": 38,
+      "52": 38,
+      "53": 38,
+      "54": 38,
+      "55": 38,
       "56": 1
     },
     "f": {
@@ -6887,7 +6887,7 @@
       "4": 1,
       "5": 0,
       "6": 1,
-      "7": 43,
+      "7": 39,
       "8": 1,
       "9": 2
     },
@@ -6902,18 +6902,18 @@
       ],
       "2": [
         1,
-        42
+        38
       ],
       "3": [
-        42,
+        38,
         1
       ],
       "4": [
-        40,
+        36,
         2
       ],
       "5": [
-        40,
+        36,
         2
       ]
     },
@@ -9598,7 +9598,7 @@
         },
         "end": {
           "line": 75,
-          "column": 93
+          "column": 94
         }
       },
       "43": {
@@ -12283,12 +12283,12 @@
         "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"m3\">\r\n  <mat-card *ngIf=\"session\">\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n          <button mat-icon-button (click)=\"back()\">\r\n            <mat-icon>arrow_back</mat-icon>\r\n          </button>\r\n          <h1>{{session.name | titlecase}}</h1>\r\n        </div>\r\n        <div>\r\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Delete</span>\r\n          </button>\r\n          <div *ngIf=\"!isAdmin\">\r\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\">\r\n              <mat-icon>person_add</mat-icon>\r\n              <span class=\"ml1\">Participate</span>\r\n            </button>\r\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\">\r\n              <mat-icon>person_remove</mat-icon>\r\n              <span class=\"ml1\">Do not participate</span>\r\n            </button>\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-subtitle *ngIf=\"teacher\">\r\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\r\n        <mat-icon>\r\n          people\r\n        </mat-icon>\r\n        <span class=\"ml1\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\r\n      </div>\r\n    </mat-card-subtitle>\r\n    <div mat-card-image fxLayoutAlign=\"center center\">\r\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n    </div>\r\n    <mat-card-content>\r\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            group\r\n          </mat-icon>\r\n          <span class=\"ml1\">{{ session.users.length }} attendees</span>\r\n        </div>\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            calendar_month\r\n          </mat-icon>\r\n          <span class=\"ml1\">{{ session.date | date: 'longDate'}}</span>\r\n        </div>\r\n      </div>\r\n      <div class=\"description\">\r\n        <p>Description:</p>\r\n        {{ session.description }}\r\n        <br>\r\n      </div>\r\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\r\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
+        "<div class=\"m3\">\r\n  <mat-card *ngIf=\"session\">\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n          <button mat-icon-button (click)=\"back()\">\r\n            <mat-icon>arrow_back</mat-icon>\r\n          </button>\r\n          <h1>{{session.name | titlecase}}</h1>\r\n        </div>\r\n        <div>\r\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\" id=\"deleteButton\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Delete</span>\r\n          </button>\r\n          <div *ngIf=\"!isAdmin\">\r\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\">\r\n              <mat-icon>person_add</mat-icon>\r\n              <span class=\"ml1\">Participate</span>\r\n            </button>\r\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\">\r\n              <mat-icon>person_remove</mat-icon>\r\n              <span class=\"ml1\">Do not participate</span>\r\n            </button>\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-subtitle *ngIf=\"teacher\">\r\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\r\n        <mat-icon>\r\n          people\r\n        </mat-icon>\r\n        <span class=\"ml1\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\r\n      </div>\r\n    </mat-card-subtitle>\r\n    <div mat-card-image fxLayoutAlign=\"center center\">\r\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n    </div>\r\n    <mat-card-content>\r\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            group\r\n          </mat-icon>\r\n          <span class=\"ml1\">{{ session.users.length }} attendees</span>\r\n        </div>\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            calendar_month\r\n          </mat-icon>\r\n          <span class=\"ml1\">{{ session.date | date: 'longDate'}}</span>\r\n        </div>\r\n      </div>\r\n      <div class=\"description\">\r\n        <p>Description:</p>\r\n        {{ session.description }}\r\n        <br>\r\n      </div>\r\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\r\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component, OnInit } from '@angular/core';\r\nimport { FormBuilder } from '@angular/forms';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { ActivatedRoute, Router } from '@angular/router';\r\nimport { Teacher } from '../../../../interfaces/teacher.interface';\r\nimport { SessionService } from '../../../../services/session.service';\r\nimport { TeacherService } from '../../../../services/teacher.service';\r\nimport { Session } from '../../interfaces/session.interface';\r\nimport { SessionApiService } from '../../services/session-api.service';\r\n\r\n@Component({\r\n  selector: 'app-detail',\r\n  templateUrl: './detail.component.html',\r\n  styleUrls: ['./detail.component.scss']\r\n})\r\nexport class DetailComponent implements OnInit {\r\n  public session: Session | undefined;\r\n  public teacher: Teacher | undefined;\r\n\r\n  public isParticipate = false;\r\n  public isAdmin = false;\r\n\r\n  public sessionId: string;\r\n  public userId: string;\r\n\r\n  constructor(\r\n    private route: ActivatedRoute,\r\n    private fb: FormBuilder,\r\n    private sessionService: SessionService,\r\n    private sessionApiService: SessionApiService,\r\n    private teacherService: TeacherService,\r\n    private matSnackBar: MatSnackBar,\r\n    private router: Router) {\r\n    this.sessionId = this.route.snapshot.paramMap.get('id')!;\r\n    this.isAdmin = this.sessionService.sessionInformation!.admin;\r\n    this.userId = this.sessionService.sessionInformation!.id.toString();\r\n  }\r\n\r\n  public ngOnInit(): void {\r\n    this.fetchSession();\r\n  }\r\n\r\n  public back() {\r\n    window.history.back();\r\n  }\r\n\r\n  public delete(): void {\r\n    this.sessionApiService\r\n      .delete(this.sessionId)\r\n      .subscribe((_: any) => {\r\n          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });\r\n          this.router.navigate(['sessions']);\r\n        }\r\n      );\r\n  }\r\n\r\n  public participate(): void {\r\n    this.sessionApiService.participate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\r\n  }\r\n\r\n  public unParticipate(): void {\r\n    this.sessionApiService.unParticipate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\r\n  }\r\n\r\n  private fetchSession(): void {\r\n    this.sessionApiService\r\n      .detail(this.sessionId)\r\n      .subscribe((session: Session) => {\r\n        this.session = session;\r\n        this.isParticipate = session.users.some(u => u === this.sessionService.sessionInformation!.id);\r\n        this.teacherService\r\n          .detail(session.teacher_id.toString())\r\n          .subscribe((teacher: Teacher) => this.teacher = teacher);\r\n      });\r\n  }\r\n\r\n}\r\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f742e00c32ce44640821a83d25991f2d04ad9f21"
+    "hash": "2346d90edb0d387f3d70d36326bde19ae0b944c7"
   },
   "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts": {
     "path": "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts",
@@ -16035,7 +16035,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": ";;;;;;;;;;;;IAIMA,kCAAkF,CAAlF,EAAkF,UAAlF;IACYA;IAAGA;IACbA;IAAkBA;IAAMA;;;;;;;;;;IAwBtBA,mCAC6C,CAD7C,EAC6C,UAD7C;IAEYA;IAAIA;IACdA;IAAkBA;IAAIA;;;;;IAFhBA;;;;;;;;;;IArBZA,oCAA0E,CAA1E,EAA0E,iBAA1E,EAA0E,CAA1E,EAA0E,gBAA1E;IAEoBA;IAAkBA;IAClCA;IACEA;;IACFA;IAEFA;IACEA;IACFA;IACAA,yCAAkB,EAAlB,EAAkB,GAAlB;IAEIA;IACFA;IAEFA,0CAAkB,EAAlB,EAAkB,QAAlB,EAAkB,EAAlB,EAAkB,EAAlB,EAAkB,UAAlB;IAEcA;IAAMA;IAChBA;IAAkBA;IAAMA;IAE1BA;IAKFA;;;;;;IAvBkBA;IAAAA;IAEdA;IAAAA;IAQAA;IAAAA;IAIwCA;IAAAA;IAIjCA;IAAAA;;;;AClBnB,WAAaC,aAAb;EAAM,MAAOA,aAAP,CAAoB;IAIxBC,YACUC,cADV,EAEUC,iBAFV,EAE8C;MADpC;MACA;MAJH,iBAAmC,KAAKA,iBAAL,CAAuBC,GAAvB,EAAnC;IAKF;;IAEG,IAAJC,IAAI;MACN,OAAO,KAAKH,cAAL,CAAoBI,kBAA3B;IACD;;EAXuB;;;qBAAbN,eAAaD;EAAA;;;UAAbC;IAAaO;IAAAC;IAAAC;IAAAC;IAAAC;MAAA;QDZ1BZ,+BAAkB,CAAlB,EAAkB,UAAlB,EAAkB,CAAlB,EAAkB,iBAAlB,EAAkB,CAAlB,EAAkB,CAAlB,EAAkB,gBAAlB,EAAkB,CAAlB;QAGiCA;QAAiBA;QAC5CA;QAIFA;QACAA;QACEA;;QA2BFA;;;;QAjCWA;QAAAA;QAMkCA;QAAAA;;;;;;ECEjD,OAAaC,aAAb;AAAA",
+      "mappings": ";;;;;;;;;;;;IAIMA,kCAAkF,CAAlF,EAAkF,UAAlF;IACYA;IAAGA;IACbA;IAAkBA;IAAMA;;;;;;;;;;IAwBtBA,mCAC6D,CAD7D,EAC6D,UAD7D;IAEYA;IAAIA;IACdA;IAAkBA;IAAIA;;;;;IAFhBA;;;;;;;;;;IArBZA,oCAA0E,CAA1E,EAA0E,iBAA1E,EAA0E,CAA1E,EAA0E,gBAA1E;IAEoBA;IAAkBA;IAClCA;IACEA;;IACFA;IAEFA;IACEA;IACFA;IACAA,yCAAkB,EAAlB,EAAkB,GAAlB;IAEIA;IACFA;IAEFA,0CAAkB,EAAlB,EAAkB,QAAlB,EAAkB,EAAlB,EAAkB,EAAlB,EAAkB,UAAlB;IAEcA;IAAMA;IAChBA;IAAkBA;IAAMA;IAE1BA;IAKFA;;;;;;IAvBkBA;IAAAA;IAEdA;IAAAA;IAQAA;IAAAA;IAIwCA;IAAAA;IAIjCA;IAAAA;;;;AClBnB,WAAaC,aAAb;EAAM,MAAOA,aAAP,CAAoB;IAIxBC,YACUC,cADV,EAEUC,iBAFV,EAE8C;MADpC;MACA;MAJH,iBAAmC,KAAKA,iBAAL,CAAuBC,GAAvB,EAAnC;IAKF;;IAEG,IAAJC,IAAI;MACN,OAAO,KAAKH,cAAL,CAAoBI,kBAA3B;IACD;;EAXuB;;;qBAAbN,eAAaD;EAAA;;;UAAbC;IAAaO;IAAAC;IAAAC;IAAAC;IAAAC;MAAA;QDZ1BZ,+BAAkB,CAAlB,EAAkB,UAAlB,EAAkB,CAAlB,EAAkB,iBAAlB,EAAkB,CAAlB,EAAkB,CAAlB,EAAkB,gBAAlB,EAAkB,CAAlB;QAGiCA;QAAiBA;QAC5CA;QAIFA;QACAA;QACEA;;QA2BFA;;;;QAjCWA;QAAAA;QAMkCA;QAAAA;;;;;;ECEjD,OAAaC,aAAb;AAAA",
       "names": [
         "i0",
         "ListComponent",
@@ -16057,12 +16057,12 @@
         "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"list\">\r\n  <mat-card>\r\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\r\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\r\n        <mat-icon>add</mat-icon>\r\n        <span class=\"ml1\">Create</span>\r\n      </button>\r\n    </mat-card-header>\r\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\r\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\r\n        <mat-card-header>\r\n          <mat-card-title>{{ session.name }}</mat-card-title>\r\n          <mat-card-subtitle>\r\n            Session on {{ session.date | date: 'longDate'}}\r\n          </mat-card-subtitle>\r\n        </mat-card-header>\r\n        <div mat-card-image fxLayoutAlign=\"center center\">\r\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n        </div>\r\n        <mat-card-content>\r\n          <p>\r\n            {{ session.description }}\r\n          </p>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\">\r\n            <mat-icon>search</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\r\n                  [routerLink]=\"['update',session.id]\">\r\n            <mat-icon>edit</mat-icon>\r\n            <span class=\"ml1\">Edit</span>\r\n          </button>\r\n        </mat-card-actions>\r\n      </mat-card>\r\n    </div>\r\n  </mat-card>\r\n</div>\r\n",
+        "<div class=\"list\">\r\n  <mat-card>\r\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\r\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\r\n        <mat-icon>add</mat-icon>\r\n        <span class=\"ml1\">Create</span>\r\n      </button>\r\n    </mat-card-header>\r\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\r\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\r\n        <mat-card-header>\r\n          <mat-card-title>{{ session.name }}</mat-card-title>\r\n          <mat-card-subtitle>\r\n            Session on {{ session.date | date: 'longDate'}}\r\n          </mat-card-subtitle>\r\n        </mat-card-header>\r\n        <div mat-card-image fxLayoutAlign=\"center center\">\r\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n        </div>\r\n        <mat-card-content>\r\n          <p>\r\n            {{ session.description }}\r\n          </p>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\">\r\n            <mat-icon>search</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\r\n                  [routerLink]=\"['update',session.id]\" id=\"editButton\">\r\n            <mat-icon>edit</mat-icon>\r\n            <span class=\"ml1\">Edit</span>\r\n          </button>\r\n        </mat-card-actions>\r\n      </mat-card>\r\n    </div>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component } from '@angular/core';\r\nimport { Observable } from 'rxjs';\r\nimport { SessionInformation } from '../../../../interfaces/sessionInformation.interface';\r\nimport { SessionService } from '../../../../services/session.service';\r\nimport { Session } from '../../interfaces/session.interface';\r\nimport { SessionApiService } from '../../services/session-api.service';\r\n\r\n@Component({\r\n  selector: 'app-list',\r\n  templateUrl: './list.component.html',\r\n  styleUrls: ['./list.component.scss']\r\n})\r\nexport class ListComponent {\r\n\r\n  public sessions$: Observable<Session[]> = this.sessionApiService.all();\r\n\r\n  constructor(\r\n    private sessionService: SessionService,\r\n    private sessionApiService: SessionApiService\r\n  ) { }\r\n\r\n  get user(): SessionInformation | undefined {\r\n    return this.sessionService.sessionInformation;\r\n  }\r\n}\r\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "2f3044a7698daf79fa82a243d4dbfde846ec7c6d"
+    "hash": "39b3356185caceb8f3868d1532ab96be35216d0c"
   },
   "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts": {
     "path": "/home/tandre/projects_OC/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts",

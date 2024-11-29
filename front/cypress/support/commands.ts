@@ -41,3 +41,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import './index'
+
+function login(isAdmin: boolean): any {
+  cy.visit('/login');
+
+  cy.intercept('POST', '/api/auth/login', {
+    body: {
+      id: 1,
+      username: 'userName',
+      firstName: 'firstName',
+      lastName: 'lastName',
+      admin: isAdmin,
+    },
+  });
+
+  cy.get('input[formControlName=email]').type('yoga@studio.com');
+  cy.get('input[formControlName=password]').type(`${'test!1234'}{enter}{enter}`);
+}
+
+Cypress.Commands.add('login', login);
