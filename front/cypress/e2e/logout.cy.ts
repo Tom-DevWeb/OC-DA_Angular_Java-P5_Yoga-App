@@ -1,6 +1,8 @@
+import "../support/index"
+
 describe('Logout spec', () => {
   beforeEach(() => {
-    cy.login();
+    cy.login(true);
   })
 
   it('Logout successfull', () => {

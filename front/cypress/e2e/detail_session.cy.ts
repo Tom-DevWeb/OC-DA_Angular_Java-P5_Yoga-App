@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('Detail session spec', () => {
   beforeEach(() => {
 
@@ -52,7 +54,7 @@ describe('Detail session spec', () => {
       }
     ).as('getSession');
 
-    cy.login();
+    cy.login(true);
   })
 
   it('Detail session successfull', () => {

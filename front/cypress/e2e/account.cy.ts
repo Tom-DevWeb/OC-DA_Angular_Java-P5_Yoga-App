@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('Account session spec', () => {
   beforeEach(() => {
 
@@ -14,15 +16,7 @@ describe('Account session spec', () => {
       },
     }).as('getUserInfo');
 
-    cy.intercept(
-      {
-        method: 'GET',
-        url: '/api/session',
-      },
-      []
-    ).as('getSessions');
-
-    cy.login();
+    cy.login(true);
   })
 
   it('Account session successfull', () => {

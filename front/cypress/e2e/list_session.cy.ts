@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('List session spec', () => {
   beforeEach(() => {
 
@@ -40,7 +42,7 @@ describe('List session spec', () => {
       ]
     ).as('getSessions');
 
-    cy.login();
+    cy.login(true);
   })
 
   it('List session successfull', () => {

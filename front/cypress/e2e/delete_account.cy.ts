@@ -1,6 +1,8 @@
+import "../support/index"
+
 describe('Delete account spec', () => {
   beforeEach(() => {
-    cy.login();
+    cy.login(true);
 
     cy.intercept('GET', '/api/user/1', {
       statusCode: 200,

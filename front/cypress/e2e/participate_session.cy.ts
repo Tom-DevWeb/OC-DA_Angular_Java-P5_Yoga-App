@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('Participate session spec', () => {
   beforeEach(() => {
 
@@ -40,7 +42,7 @@ describe('Participate session spec', () => {
       }
     ).as('getSession');
 
-    cy.loginNotAdmin();
+    cy.login(false);
   })
 
   it('Participate session successfull', () => {

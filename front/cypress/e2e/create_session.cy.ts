@@ -1,6 +1,8 @@
+import "../support/index"
+
 describe('Create session spec', () => {
   beforeEach(() => {
-    cy.login();
+    cy.login(true);
 
     cy.intercept('GET', '/api/teacher', {
       statusCode: 200,

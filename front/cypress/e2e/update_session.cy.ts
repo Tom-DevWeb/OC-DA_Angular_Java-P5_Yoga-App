@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('Update session spec', () => {
   beforeEach(() => {
     cy.intercept(
@@ -67,7 +69,7 @@ describe('Update session spec', () => {
       ]
     ).as('getSessions');
 
-    cy.login();
+    cy.login(true);
   })
 
   it('Update session successfull', () => {

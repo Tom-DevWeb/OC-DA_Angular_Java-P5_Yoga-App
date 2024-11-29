@@ -1,3 +1,5 @@
+import "../support/index"
+
 describe('Delete session spec', () => {
   beforeEach(() => {
 
@@ -55,7 +57,7 @@ describe('Delete session spec', () => {
       body: {},
     }).as('deleteSession')
 
-    cy.login();
+    cy.login(true);
   })
 
   it('Delete session successfull', () => {
