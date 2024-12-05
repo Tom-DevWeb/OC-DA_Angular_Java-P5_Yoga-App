@@ -30,15 +30,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @AutoConfigureMockMvc
 @Testcontainers
 @ActiveProfiles("test")
-public class AuthControllerIntegrationTest {
+public class AuthControllerIntegTest {
 
     @Container
     static MySQLContainer<?> mySQLContainer = new MySQLContainer<>("mysql:8.0")
             .withDatabaseName("test")
             .withUsername("test")
             .withPassword("test");
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
     @DynamicPropertySource
     static void configure(DynamicPropertyRegistry registry) {
@@ -46,6 +44,9 @@ public class AuthControllerIntegrationTest {
         registry.add("spring.datasource.username", mySQLContainer::getUsername);
         registry.add("spring.datasource.password", mySQLContainer::getPassword);
     }
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private MockMvc mockMvc;
