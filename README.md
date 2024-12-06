@@ -16,67 +16,65 @@ L'objectif de ce projet est de tester une application Fullstack.
 
 - [Projet](#-projet)
     - [Prérequis](#prérequis)
-    - [Importer la base de données MySQL](#importer-la-base-de-donnée-mysql)
-    - [Variables d'environnement](#variable-denvironnement)
-    - [Build le projet](#build-le-projet)
-    - [Build l'artifact](#build-lartifact)
-- [Etape de conception](#-etape-de-conception)
-- 
+    - [Front-end](#front-end)
+    - [Back-end](#back-end)
+    - [Taux de couverture](#taux-de-couverture)
+- [Etape de conception](#etape-de-conception)
+- [Ressources](#ressources)
+
 ## 📁 Projet
 
 ### Prérequis
 
 1. Fork ou cloner ce projet
 2. Installer [MySQL 8 command Line](https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql/7152681-installez-le-sgbd-mysql) ou avec [Docker](https://spring.io/guides/gs/accessing-data-mysql)
-3. [Importer la BDD MySQL](#importer-la-base-de-donnée-mysql)
-4. Installer les [Variables d'environnement](#variable-denvironnement)
+3. Installer la partie [Front-end](#front-end)
+4. Installer la partie [Back-end](#back-end)
 
-## Front-end
+### Front-end
 
-### Démarrer le projet
+[Lien README du Front-end](./front/README.md)
 
-1. Faire `ng serve` pour démarrer le serveur de développement.
-2. Aller sur `http://localhost:4200/`.
+### Back-end
 
-## Back-end
+[Lien README du Back-end](./back/README.md)
 
-### Importer la base de donnée MySQL
+### Taux de couverture
 
-Dans le fichier `resources` à la racine du projet puis dans `mysql` vous trouverez un `script.sql` à importer dans votre MySQL une fois installé
+#### Front
 
-Si vous n'êtes pas connecté :
+![img.png](ressources/images/coverage_front.png)
 
-`mysql -u root -p nom_de_la_base_de_donnees < mon/chemin/resources/mysql/script.sql;`
+> [!NOTE]
+> Le rapport de couverture Cypress n'est pas affiché, car il cible le dernier fichier cy.ts testé.
+> Les tests E2E réalisé couvre plus de 80% de l'application.
 
-Si vous êtes connecté :
+#### Back
 
-`use nom_de_la_base_de_donnees;`
+![coverage_back](ressources/images/coverage_back.png)
 
-`source mon/chemin/resources/mysql/script.sql;`
+## Etape de conception
 
-### Variable d'environnement
+### [STEP 1 - Initialisation du projet](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/1)
 
-Configurer les variables d'environnement directement sur Intellij:
+Test unitaire et d'intégration sur la partie Back-end.
 
-`Run` > `Edit Configuration` > `Modify options` > cocher `Variable environment` >
-Dans le champ `Environment variables` cliquer sur `$`
+### [STEP 2 - Authentification JWT](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/2)
 
-Liste des variables d'environnement :
+Réalisation des tests End-to-End sur le Front-end avec Cypress.
 
-```
-DATABASE_USERNAME -> identifiant_mysql
-DATABASE_PASSWORD -> mdp_mysql
-```
-> [!TIP]
-> Vous pouvez générer votre JWT_SECRET_KEY avec la commande:
-> `openssl rand -base64 32`
+### [STEP 3 - Implémentation une route](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/3)
 
-### Build le projet
+Test unitaire et d'intégration sur la partie Back-end.
 
-1. Cliquer sur le bouton **play** `Run 'SpringBootSecurityJwtApplication'` dans la barre en haut d'**IntelliJ**.
-2. Soit, vous faites des requêtes depuis postman `resources/postman` ou cloner et démarrer le front-end.
+### [STEP 4 - Implémentation Swagger](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/4)
 
-## ⚙️ Etape de test
+Rédaction du README et de la documentation.
 
+## Ressources
+
+- Script SQL
+- Collection Postamn
+- Images
 
 
