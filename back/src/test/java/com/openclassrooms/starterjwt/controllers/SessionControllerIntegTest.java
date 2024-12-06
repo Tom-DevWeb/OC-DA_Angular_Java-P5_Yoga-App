@@ -199,6 +199,7 @@ public class SessionControllerIntegTest {
     @WithMockUser
     public void testNoLongerParticipate_Success() throws Exception {
 
+        stubUser.setEmail("user2@example.com");
         userRepository.save(stubUser);
 
         stubSession.setUsers(Collections.singletonList(stubUser));
