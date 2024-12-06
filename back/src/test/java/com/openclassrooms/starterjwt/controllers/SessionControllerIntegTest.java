@@ -75,7 +75,6 @@ public class SessionControllerIntegTest {
 
     @BeforeEach
     public void setUp() {
-        // Création d'une session pour les tests
         stubSession = new Session();
         stubSession.setName("Test Session");
         stubSession.setDescription("Test session description");
@@ -93,7 +92,6 @@ public class SessionControllerIntegTest {
                 .admin(false)
                 .createdAt(LocalDateTime.now())
                 .updatedAt(LocalDateTime.now()).build();
-        //userRepository.save(stubUser);
     }
 
     @Test
@@ -182,10 +180,9 @@ public class SessionControllerIntegTest {
     public void testParticipate_Success() throws Exception {
         Session savedSession = sessionService.create(stubSession);
 
-        User stubUser1 = stubUser.setId(1L);
-        userRepository.save(stubUser1);
+        userRepository.save(stubUser);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/session/{id}/participate/{userId}", savedSession.getId(), stubUser1.getId())
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/session/{id}/participate/{userId}", savedSession.getId(), stubUser.getId())
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
@@ -202,13 +199,12 @@ public class SessionControllerIntegTest {
     @WithMockUser
     public void testNoLongerParticipate_Success() throws Exception {
 
-        User stubUser2 = stubUser.setId(2L).setEmail("user2@example.com");
-        userRepository.save(stubUser2);
+        userRepository.save(stubUser);
 
-        stubSession.setUsers(Collections.singletonList(stubUser2));
+        stubSession.setUsers(Collections.singletonList(stubUser));
         Session savedSession = sessionService.create(stubSession);
 
-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/session/{id}/participate/{userId}", savedSession.getId(), stubUser2.getId())
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/session/{id}/participate/{userId}", savedSession.getId(), stubUser.getId())
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
