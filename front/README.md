@@ -24,7 +24,7 @@ Le compte Admin par default :
 
 ### Test de couverture
 
-npm run test -- --coverage
+`npm run test -- --coverage`
 
 > [!NOTE]
 > Le rapport de couverture est disponible ici :
@@ -46,6 +46,6 @@ Générer un rapport de couverture :
 
 > [!WARNING]
 > Le rapport de couverture généré par Cypress correspond au dernier fichier .cy.ts démarrer pour un test.
-> Il ne lance pas tous les fichiers pour générer le taux de couverture.
+> Il ne lance pas tous les fichiers pour générer le **taux de couverture global**.
 > Plus de détails en faisant: `nyc report`
 
