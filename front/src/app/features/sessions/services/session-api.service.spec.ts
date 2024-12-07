@@ -4,7 +4,7 @@ import { Session} from "../interfaces/session.interface";
 import { SessionApiService } from './session-api.service';
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 
-describe('SessionsService', () => {
+describe('SessionsApiService (Intégration)', () => {
   let sessionApiService: SessionApiService;
   let httpTestingController: HttpTestingController
 

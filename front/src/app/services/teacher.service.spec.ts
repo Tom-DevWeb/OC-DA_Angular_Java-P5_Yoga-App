@@ -18,7 +18,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {SessionService} from "./session.service";
 
-describe('TeacherService', () => {
+describe('TeacherService (Intégration)', () => {
   let service: TeacherService;
   let detailComponent: DetailComponent
   let detailFixture: ComponentFixture<DetailComponent>

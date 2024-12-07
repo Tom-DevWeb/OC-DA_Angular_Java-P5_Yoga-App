@@ -11,7 +11,7 @@ import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 
-describe('UserService', () => {
+describe('UserService (Intégration)', () => {
   let service: UserService;
   let sessionService: SessionService
   let component: MeComponent
