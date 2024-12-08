@@ -8,7 +8,7 @@
 ![Static Badge](https://img.shields.io/badge/11-JAVA_version-orange)
 ![Static Badge](https://img.shields.io/badge/3.3.4-Spring_Boot_version-gree)
 
-# 🪳 Projet 4 - Testez une application full-stack
+# 🪳 Projet 5 - Testez une application full-stack
 
 L'objectif de ce projet est de tester une application Fullstack.
 
@@ -55,19 +55,19 @@ L'objectif de ce projet est de tester une application Fullstack.
 
 ## Etape de conception
 
-### [STEP 1 - Initialisation du projet](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/1)
+### [STEP 1 - Tests Front-end](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/1)
 
-Test unitaire et d'intégration sur la partie Back-end.
+Test unitaire et d'intégration sur la partie Front-end.
 
-### [STEP 2 - Authentification JWT](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/2)
+### [STEP 2 - Test e2e Cypress](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/2)
 
 Réalisation des tests End-to-End sur le Front-end avec Cypress.
 
-### [STEP 3 - Implémentation une route](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/3)
+### [STEP 3 - Tests Back-end](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/3)
 
 Test unitaire et d'intégration sur la partie Back-end.
 
-### [STEP 4 - Implémentation Swagger](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/4)
+### [STEP 4 - Rédaction README](https://github.com/Tom-DevWeb/OC-DA_Angular_Java-P5_Yoga-App/pull/4)
 
 Rédaction du README et de la documentation.
 
